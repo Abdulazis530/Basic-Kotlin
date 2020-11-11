@@ -9,4 +9,11 @@ fun main() {
             middleName = "Edward",
             lastName="Gate"
     )
+
+    fullName(
+            lastName="Gate",
+            firstName = "tukiman",
+            middleName = "Edward"
+
+    )
 }
