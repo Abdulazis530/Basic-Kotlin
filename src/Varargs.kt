@@ -12,12 +12,12 @@ fun hitungTotalArray(values: Array<Int>): Int{
     return total
 }
 
-fun hitungTotalVarags(vararg values: Int): Int{
+fun hitungTotalVarags(name: String,vararg values: Int): String{
     var total=0
     for(value in values){
         total+=value
     }
-    return total
+    return "Duit si $name cuma $total ribu, ih miskin!"
 }
 
 fun main() {
@@ -26,7 +26,8 @@ fun main() {
     var result=hitungTotalArray(valuesArray)
 
     /*dengan varags biasa*/
-    var resultVarags=hitungTotalVarags(10,10,10)
+    var name ="Azis"
+    var resultVarags=hitungTotalVarags(name,10,10)
     println(result)
     println(resultVarags)
 }
